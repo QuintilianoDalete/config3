@@ -16,7 +16,7 @@ Este repositorio tem como objetivo demostrar minhas habilidades como desenvolved
 - [ ] Inicie a aplicação: npm start
 
 ### Obs:
-Para habilitar o CORS e prosseguir com a requisicao a API foi necessário instalar a extensão Moesif: :wink:
+Para habilitar o CORS e prosseguir com a requisicao a API foi necessário instalar a extensão Moesif:  :wink:
 
 *https://chrome.google.com/webstore/detail/moesif-origin-cors-change/digfbfaphojjndkpccljibejjbppifbc*
 

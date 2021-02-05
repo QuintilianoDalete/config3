@@ -5,8 +5,8 @@ import FundInfo from './components/FundInfo';
 import './App.css';
 
 class Funds extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       isClicked: false,
       clickedFundId: '',
@@ -34,7 +34,7 @@ class Funds extends Component {
 
   renderLoading() {
     return(
-      <div class="loader" />
+      <div className="loader" />
     )
   }
 
@@ -113,16 +113,18 @@ class Funds extends Component {
   renderTable(funds) {
     const { clickedFundId } = this.state;
     return (
-      <table class="table">
-        <thead class="table-head">
-          <th class="th">AÇÕES</th>
-          <th class="th">PRODUTO</th>
-          <th class="th">DATA</th>
-          <th class="th">COTA</th>
-          <th class="th">DIA %</th>
-          <th class="th">ANO %</th>
-          <th class="th">12 M %</th>
-          <th class="th">PLR</th>
+      <table className="table">
+        <thead key="u" className="table-head">
+          <tr>
+            <th key="d" className="th">AÇÕES</th>
+            <th key="s" className="th">PRODUTO</th>
+            <th key="a" className="th">DATA</th>
+            <th key="b" className="th">COTA</th>
+            <th key="v" className="th">DIA %</th>
+            <th key="c" className="th">ANO %</th>
+            <th key="x" className="th">12 M %</th>
+            <th key="z" className="th">PLR</th>
+          </tr>
         </thead>
         <tbody>
           {funds.map((fund) => (
@@ -137,7 +139,6 @@ class Funds extends Component {
 
   render () {
     const { funds } = this.state;
-    console.log(funds);
       return(
         <div>
           {funds

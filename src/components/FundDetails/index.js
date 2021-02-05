@@ -5,9 +5,8 @@ class FundDetails extends Component {
     const { fund, handleIsoDate, handlePercentNumber, handleStock, handleButtonClick } = this.props
     return (
       <>
-        <table className="table" onClick={() => handleButtonClick(fund.id)}>
-          <tbody>
-            <tr key={`${fund.id}-det`} className="tr">
+        <thead className="table" onClick={() => handleButtonClick(fund.id)}>
+          <tr key={`${fund.id}-det`} className="tr">
             <td className="td-details">
               {
                 (fund.detail.subCategoryDescription)
@@ -15,28 +14,27 @@ class FundDetails extends Component {
                 : (fund.detail.subCategoryDescription)
               }
             </td>
-              <td className="td-details">{fund.product}</td>
-              <td className="td-details">{handleIsoDate(fund.investment.requestDate)}</td>
-              <td className="td-details">{handlePercentNumber(fund.detail.valueQuota)}</td>
-              <td className="td-details">{`${(fund.profitability.day).toFixed(2)} %`}</td>
-              <td className="td-details">{`${(fund.profitability.year).toFixed(2)} %`}</td>
-              <td className="td-details">{`${(fund.profitability.twelveMonths).toFixed(2)} %`}</td>
-              <td className="td-details">{(fund.netEquity).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</td>
-              <td className="td-details"><button /></td>
-            </tr>
-          </tbody>
-        </table> 
-            <p>Detalhe do fundo</p>
-            <hr />
-            <div>
-              <div className="details">Início do Fundo: {handleIsoDate(fund.begin)}</div>
-              <div className="details">Data da Cota: {handleIsoDate(fund.investment.requestDate)}</div>
-              <div className="details">Taxa de Administração: {handlePercentNumber(fund.detail.administrationFee)}%</div>
-              <div className="details">Patrimônio Líquido: R$ {(fund.netEquity).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</div>
-              <div className="details">Valor da Cota: {fund.detail.valueQuota}</div>
-              <div className="details">Taxa de Performance: {handlePercentNumber(fund.detail.performanceFee)}%</div>
-              <div className="details">Horário de Aplicação: {fund.timeLimit}</div>
-            </div>
+            <td className="td-details">{fund.product}</td>
+            <td className="td-details">{handleIsoDate(fund.investment.requestDate)}</td>
+            <td className="td-details">{handlePercentNumber(fund.detail.valueQuota)}</td>
+            <td className="td-details">{`${(fund.profitability.day).toFixed(2)} %`}</td>
+            <td className="td-details">{`${(fund.profitability.year).toFixed(2)} %`}</td>
+            <td className="td-details">{`${(fund.profitability.twelveMonths).toFixed(2)} %`}</td>
+            <td className="td-details">{(fund.netEquity).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</td>
+            <td className="td-details"><button /></td>
+          </tr>
+        </thead>
+        <p>Detalhe do fundo</p>
+        <hr />
+        <div>
+          <div className="details">Início do Fundo: {handleIsoDate(fund.begin)}</div>
+          <div className="details">Data da Cota: {handleIsoDate(fund.investment.requestDate)}</div>
+          <div className="details">Taxa de Administração: {handlePercentNumber(fund.detail.administrationFee)}%</div>
+          <div className="details">Patrimônio Líquido: R$ {(fund.netEquity).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</div>
+          <div className="details">Valor da Cota: {fund.detail.valueQuota}</div>
+          <div className="details">Taxa de Performance: {handlePercentNumber(fund.detail.performanceFee)}%</div>
+          <div className="details">Horário de Aplicação: {fund.timeLimit}</div>
+        </div>
         <p>Arquivos</p>
         <hr />
         <div className="container">

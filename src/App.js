@@ -113,27 +113,25 @@ class Funds extends Component {
   renderTable(funds) {
     const { clickedFundId } = this.state;
     return (
-      <table className="table">
-        <thead key="u" className="table-head">
-          <tr>
-            <th key="d" className="th">AÇÕES</th>
-            <th key="s" className="th">PRODUTO</th>
-            <th key="a" className="th">DATA</th>
-            <th key="b" className="th">COTA</th>
-            <th key="v" className="th">DIA %</th>
-            <th key="c" className="th">ANO %</th>
-            <th key="x" className="th">12 M %</th>
-            <th key="z" className="th">PLR</th>
-          </tr>
-        </thead>
-        <tbody>
-          {funds.map((fund) => (
-            <>      
-              { this.renderFund(fund, clickedFundId) }
-            </>
-          ))}
-        </tbody>
-      </table>
+      <>
+        <table className="table">
+          <thead key="u" className="table-head">
+            <tr>
+              <th className="th">AÇÕES</th>
+              <th className="th">PRODUTO</th>
+              <th className="th">DATA</th>
+              <th className="th">COTA</th>
+              <th className="th">DIA %</th>
+              <th className="th">ANO %</th>
+              <th className="th">12 M %</th>
+              <th className="th">PLR</th>
+            </tr>
+          </thead>
+        </table>
+        {funds.map((fund) => (     
+          this.renderFund(fund, clickedFundId)
+        ))}
+      </>
     )
   }
 

@@ -11,7 +11,7 @@ Este repositório tem como objetivo demostrar minhas habilidades como desenvolve
 ---
 
 #### Instruções :
-- [ ] Clone o repositório: 
+- [ ] Clone o repositório: *https://github.com/QuintilianoDalete/config3.git*
 - [ ] Instale as dependências: *npm install*
 - [ ] Inicie a aplicação: *npm start*
 

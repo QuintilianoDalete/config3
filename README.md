@@ -36,5 +36,6 @@ Para habilitar o CORS e prosseguir com a requisição à API, foi necessário in
 ### Próximos passos:
 
 - [ ] Refatoração do código.
+- [ ] Implementação do estilo responsivo.
 
 ---

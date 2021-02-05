@@ -31,6 +31,7 @@ Para habilitar o CORS e prosseguir com a requisição à API, foi necessário in
 
 ### Em execução:
 
+- [ ] Correção de bugs.
 - [ ] Implementação do estilo.
 
 ### Próximos passos:

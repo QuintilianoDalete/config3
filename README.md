@@ -1,4 +1,4 @@
-## Teste de desenvolvimento frontend
+## Teste de desenvolvimento front-end
 
 ### Descrição:
 Este repositorio tem como objetivo demostrar minhas habilidades como desenvolvedor front-end.
@@ -16,7 +16,7 @@ Este repositorio tem como objetivo demostrar minhas habilidades como desenvolved
 - [ ] Inicie a aplicação: npm start
 
 ### Obs:
-Para habilitar o CORS e prosseguir com a requisicao a API foi necessário instalar a extensão Moesif: \xF0\x9F\x98\x89
+Para habilitar o CORS e prosseguir com a requisicao a API foi necessário instalar a extensão Moesif: :wink:
 
 *https://chrome.google.com/webstore/detail/moesif-origin-cors-change/digfbfaphojjndkpccljibejjbppifbc*
 

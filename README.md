@@ -11,12 +11,12 @@ Este repositorio tem como objetivo demostrar minhas habilidades como desenvolved
 ---
 
 ## Instruções :
-- [] Clone o repositório: 
-- [] Instale as dependências: *npm install*
-- [] Inicie a aplicação: npm start
+- [ ] Clone o repositório: 
+- [ ] Instale as dependências: *npm install*
+- [ ] Inicie a aplicação: npm start
 
 # Obs:
-Para habilitar o CORS e prosseguir com a requisicao a API foi necessário instalar a extensão Moesif: 
+Para habilitar o CORS e prosseguir com a requisicao a API foi necessário instalar a extensão Moesif: U+1F609
 
 *https://chrome.google.com/webstore/detail/moesif-origin-cors-change/digfbfaphojjndkpccljibejjbppifbc*
 

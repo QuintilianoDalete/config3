@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import getFunds from './services/api';
 import FundDetails  from './components/FundDetails';
 import FundInfo from './components/FundInfo';
+import './App.css';
 
 class Funds extends Component {
   constructor() {
@@ -33,7 +34,7 @@ class Funds extends Component {
 
   renderLoading() {
     return(
-      <h1>Loading</h1>
+      <div class="loader" />
     )
   }
 
@@ -112,16 +113,16 @@ class Funds extends Component {
   renderTable(funds) {
     const { clickedFundId } = this.state;
     return (
-      <table>
-        <thead>
-          <th>AÇÕES</th>
-          <th>PRODUTO</th>
-          <th>DATA</th>
-          <th>COTA</th>
-          <th>DIA %</th>
-          <th>ANO %</th>
-          <th>12 M %</th>
-          <th>PLR</th>
+      <table class="table">
+        <thead class="table-head">
+          <th class="th">AÇÕES</th>
+          <th class="th">PRODUTO</th>
+          <th class="th">DATA</th>
+          <th class="th">COTA</th>
+          <th class="th">DIA %</th>
+          <th class="th">ANO %</th>
+          <th class="th">12 M %</th>
+          <th class="th">PLR</th>
         </thead>
         <tbody>
           {funds.map((fund) => (

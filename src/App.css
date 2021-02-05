@@ -1,38 +1,173 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.loader {
+  animation:spin 1s infinite linear;
+  border:solid 2vmin transparent;
+  border-radius:50%;
+  border-right-color:#09f;
+  border-top-color:#09f;
+  box-sizing:border-box;
+  height:20vmin;
+  left:calc(50% - 10vmin);
+  position:fixed;
+  top:calc(50% - 10vmin);
+  width:20vmin;
+  z-index:1;
+  &:before {
+    animation:spin 2s infinite linear;
+    border:solid 2vmin transparent;
+    border-radius:50%;
+    border-right-color:#3cf;
+    border-top-color:#3cf;
+    box-sizing:border-box;
+    content:"";
+    height:16vmin;
+    left:0;
+    position:absolute;
+    top:0;
+    width:16vmin;
+  }
+  &:after {
+    animation:spin 3s infinite linear;
+    border:solid 2vmin transparent;
+    border-radius:50%;
+    border-right-color:#6ff;
+    border-top-color:#6ff;
+    box-sizing:border-box;
+    content:"";
+    height:12vmin;
+    left:2vmin;
+    position:absolute;
+    top:2vmin;
+    width:12vmin;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@keyframes spin {
+  100% {
+    transform:rotate(360deg);
+  }
+}
+
+.table {
+  grid-column: span 8;
+  display: block;
+  font-family: sans-serif;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px 3px rgba(0,0,0,.05);
+  margin: 10px 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  color: #001e61;
+  border: 0;
+  padding: 0;
+  display: table;
+  box-sizing: border-box;
+  text-indent: initial;
+  font-size: 100%;
+}
+
+.table-head {
+  height: 70px;
+  border-bottom: 1px solid rgba(151,151,151,.3);
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  color: #001e61;
+  box-shadow: none;
+  text-indent: initial;
+  font-size: 100%;
+}
+
+.th {
+  padding-left: 10px;
+  text-align: left;
+  text-transform: uppercase;
+  height: 70px;
+  color: #001e61;
+  border-bottom: 1px solid rgba(151,151,151,.3);
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: .5px;
+  display: table-cell;
+  vertical-align: inherit;
+  font-weight: bold;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  box-shadow: none;
+  text-indent: initial;
+}
+
+
+.tr {
+  height: 70px;
+  border-bottom: 1px solid rgba(151,151,151,.3);
+  vertical-align: middle;
+  display: table-row;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  color: #001e61;
+  box-shadow: none;
+  text-indent: initial;
+  font-size: 100%;
+}
+
+.td {
+  position: relative;
+  border-left: 5px solid transparent;
+  padding-left: 10px;
+  text-transform: uppercase;
+  padding-right: 5px;
+  font-weight: 400;
+  cursor: pointer;
+  font-family: moderat-light,Helvetica,sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: .5px;
+  display: table-cell;
+  vertical-align: inherit;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  color: #001e61;
+  box-shadow: none;
+  text-indent: initial;
+  content: "";
+}
+
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.details {
+  display: inline;
+  padding: 50px;
+  margin-right: 20px;
+}
+
+.td-details {
+  position: relative;
+  border-left: 5px solid transparent;
+  padding-left: 10px;
+  text-transform: uppercase;
+  font-weight: 400;
+  cursor: pointer;
+  font-family: moderat-light,Helvetica,sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: .5px;
+  vertical-align: inherit;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background-color: #001e61;
+  box-shadow: none;
+  text-indent: initial;
+  content: "";
 }

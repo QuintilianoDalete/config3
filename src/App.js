@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import getFunds from './services/api';
 import FundDetails  from './components/FundDetails';
 import FundInfo from './components/FundInfo';
+import FundHeader from './components/FundHeader';
 import './App.css';
 
 class Funds extends Component {
@@ -114,6 +115,7 @@ class Funds extends Component {
     const { clickedFundId } = this.state;
     return (
       <>
+        <FundHeader />
         <table className="table">
           <thead key="u" className="table-head">
             <tr>

@@ -1,0 +1,130 @@
+.caption .after {
+  margin-right: 10px;
+}
+
+.after {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid #3cc5ff;
+  font-weight: 400;
+  color: #3cc5ff;
+  font-size: 10px;
+}
+
+.caption {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 4px 3px rgba(0,0,0,.05);
+  margin: 25px 0 30px;
+  padding: 10px 20px;
+  border: 1px solid rgba(151,151,151,.3);
+}
+
+.caption-category {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.uppercase {
+  border: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -.19px;
+  font-family: moderat-thin,Times,serif;
+  margin: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.text-s1.light.uppercase.caption-title {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: .5px;
+  font-family: moderat-light,Helvetica,sans-serif;
+  flex-basis: auto;
+  padding-top: 0;
+  margin: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+}
+
+.text-s1.light {
+  white-space: nowrap;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: .5px;
+  font-family: moderat-light,Helvetica,sans-serif;
+}
+
+.caption-risk {
+  border: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -.19px;
+  font-family: moderat-thin,Times,serif;
+  white-space: nowrap;
+  margin: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+
+.risk {
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -.19px;
+  font-family: moderat-thin,Times,serif;
+  white-space: nowrap;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  padding: 2px;
+  text-align: center;
+  margin: 0 auto;
+  display: inline-flex;
+}
+
+.high {
+  background: #b94948;
+  border: 1px solid #b94948;
+  position: relative;
+  top: 3px;
+  margin-right: 10px;
+}
+
+.medium {
+  background: #e98317;
+  border: 1px solid #e98317;
+  position: relative;
+  top: 3px;
+  margin-right: 10px;
+}
+
+.low {
+  background: #1790d2;
+  border: 1px solid #1790d2;
+  position: relative;
+  top: 3px;
+  margin-right: 10px;
+}

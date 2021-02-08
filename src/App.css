@@ -47,7 +47,31 @@
   }
 }
 
-.table {
+.grid {
+  font-size: 100%;
+  font-family: sans-serif;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  grid-column: span 8;
+}
+
+.table-fund {
+  font-size: 100%;
+  font-family: sans-serif;
+  border: 0;
+  padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  color: #001e61;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px 3px rgba(0,0,0,.05);
+  margin: 10px 0;
+}
+
+
+/* .table {
   grid-column: span 8;
   display: block;
   font-family: sans-serif;
@@ -170,4 +194,4 @@
   box-shadow: none;
   text-indent: initial;
   content: "";
-}
+} */

@@ -3,6 +3,7 @@ import getFunds from './services/api';
 import FundDetails  from './components/FundDetails';
 import FundInfo from './components/FundInfo';
 import FundHeader from './components/FundHeader';
+import TableHeader from './components/TableHeader';
 import './App.css';
 
 class Funds extends Component {
@@ -62,8 +63,6 @@ class Funds extends Component {
     return formatedQuota;
   }
 
-
-
   renderFundDetail(fund) {
     return (
       <FundDetails
@@ -114,26 +113,15 @@ class Funds extends Component {
   renderTable(funds) {
     const { clickedFundId } = this.state;
     return (
-      <>
+      <div className="grid">
         <FundHeader />
-        <table className="table">
-          <thead key="u" className="table-head">
-            <tr>
-              <th className="th">AÇÕES</th>
-              <th className="th">PRODUTO</th>
-              <th className="th">DATA</th>
-              <th className="th">COTA</th>
-              <th className="th">DIA %</th>
-              <th className="th">ANO %</th>
-              <th className="th">12 M %</th>
-              <th className="th">PLR</th>
-            </tr>
-          </thead>
+        <table className="table-fund">
+          <TableHeader />
+          {funds.map((fund) => (     
+            this.renderFund(fund, clickedFundId)
+          ))}
         </table>
-        {funds.map((fund) => (     
-          this.renderFund(fund, clickedFundId)
-        ))}
-      </>
+      </div>
     )
   }
 

@@ -1,0 +1,58 @@
+.header {
+  font-size: 100%;
+  font-family: sans-serif;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: #001e61;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  height: 70px;
+  border-bottom: 1px solid rgba(151,151,151,.3);
+}
+
+/************************************************************/
+
+.text-s1.first-element.ng-star-inserted {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: .5px;
+  font-family: moderat-regular,Times,serif;
+  height: 70px;
+  color: #001e61;
+  border-bottom: 1px solid rgba(151,151,151,.3);
+  text-transform: uppercase;
+  padding-left: 10px;
+  text-align: left;
+}
+
+.text-s1.ng-star-inserted{
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: .5px;
+  font-family: moderat-regular,Times,serif;
+  height: 70px;
+  text-align: left;
+  color: #001e61;
+  border-bottom: 1px solid rgba(151,151,151,.3);
+  text-transform: uppercase;
+}
+
+/************************************************************/
+
+th {
+  display: table-cell;
+  vertical-align: inherit;
+  font-weight: bold;
+  text-align: -internal-center;
+}
